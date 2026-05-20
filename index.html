@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  max-width: 850px;
+  max-width: 900px;
   margin: auto;
   background: #111827;
   padding: 25px;
@@ -33,8 +33,8 @@ h2 {
 }
 
 p, li {
-  line-height: 1.7;
   color: #cbd5e1;
+  line-height: 1.7;
 }
 
 ul {
@@ -44,19 +44,29 @@ ul {
 .btn {
   display: inline-block;
   padding: 14px 18px;
-  margin: 12px 6px;
+  margin: 10px 6px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
+  border: none;
 }
 
 .email { background: #ef4444; color: white; }
 .whatsapp { background: #25D366; color: white; }
 .twitter { background: #1DA1F2; color: white; }
+.copy { background: #f59e0b; color: black; }
 
 .buttons {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
+}
+
+.note {
+  text-align:center;
+  color:#94a3b8;
+  font-size:14px;
+  margin-top:10px;
 }
 </style>
 </head>
@@ -67,18 +77,18 @@ ul {
 
 <h1>🚨 Reject Finance Bill 2026</h1>
 
+<p><strong>Public Participation Submission</strong></p>
+
+<h2>Formal Objection</h2>
+
+<p>Dear Sir/Madam,</p>
+
 <p>
-To: Parliament of Kenya – Public Participation Committee
+I am writing as a concerned Kenyan citizen to formally reject the Finance Bill 2026 due to its negative economic impact on citizens, businesses, and the digital economy.
 </p>
 
-<h2>Formal Public Objection Submission</h2>
-
 <p>
-Dear Sir/Madam,
-</p>
-
-<p>
-I am writing as a concerned Kenyan citizen to formally reject the Finance Bill 2026 due to its negative impact on the economy, businesses, and ordinary citizens.
+While revenue collection is necessary, several proposals impose excessive financial pressure on already struggling households and businesses.
 </p>
 
 <h2>Key Concerns</h2>
@@ -88,16 +98,17 @@ I am writing as a concerned Kenyan citizen to formally reject the Finance Bill 2
 <li>Higher taxes on digital payments and fintech services</li>
 <li>Agency notices during ongoing tax disputes</li>
 <li>Taxation of undistributed company profits</li>
-<li>Reduced time for filing tax returns</li>
+<li>Reduced tax filing timelines</li>
 <li>Higher withholding tax on EAC dividends</li>
 <li>Expanded VAT invoice requirements</li>
-<li>Stricter virtual asset reporting rules</li>
+<li>Virtual asset reporting restrictions</li>
 </ul>
 
 <h2>Conclusion</h2>
 
 <p>
-While some exemptions (like solar and medical goods) are positive, the overall impact of the Finance Bill 2026 is harmful to affordability, investment, and economic growth.
+Although VAT exemptions on essential goods like solar and medical supplies are positive,
+the overall impact of the Finance Bill 2026 is harmful to affordability, investment, and economic growth.
 </p>
 
 <p>
@@ -113,19 +124,24 @@ Yours faithfully,<br>
 
 <div class="buttons">
 
-<!-- EMAIL BUTTON -->
+<!-- EMAIL BUTTON (SAFE + STABLE) -->
 <a class="btn email"
-href="mailto:clerk@parliament.go.ke?cc=cna@parliament.go.ke,clerk.senate@parliament.go.ke&subject=REJECTION%20OF%20THE%20FINANCE%20BILL%202026&body=Dear%20Sir%2FMadam%2C%0A%0AI%20am%20a%20concerned%20citizen%20submitting%20my%20formal%20objection%20to%20the%20Finance%20Bill%202026.%0A%0AI%20reject%20the%20Bill%20due%20to%20its%20economic%20impact%20on%20citizens%20and%20businesses.%0A%0AI%20urge%20Parliament%20to%20reject%20or%20revise%20it.%0A%0AYours%20faithfully%2C%0A%5BYour%20Name%5D">
-📩 Send Official Email
+href="mailto:clerk@parliament.go.ke?cc=cna@parliament.go.ke,clerk.senate@parliament.go.ke&subject=REJECTION%20OF%20THE%20FINANCE%20BILL%202026&body=Dear%20Sir%2FMadam%2C%0A%0AI%20am%20a%20concerned%20citizen%20submitting%20my%20formal%20objection%20to%20the%20Finance%20Bill%202026.%0A%0AI%20reject%20the%20Bill%20due%20to%20its%20impact%20on%20cost%20of%20living%2C%20businesses%2C%20and%20digital%20economy.%0A%0AI%20urge%20Parliament%20to%20reject%20or%20revise%20it.%0A%0AYours%20faithfully%2C%0A%5BYour%20Name%5D">
+📩 Send Email
 </a>
+
+<!-- COPY FULL PETITION (FIX FOR TRUNCATION) -->
+<button class="btn copy" onclick="copyPetition()">
+📋 Copy Full Petition
+</button>
 
 <!-- WHATSAPP -->
 <a class="btn whatsapp"
-href="https://wa.me/?text=I%20reject%20the%20Finance%20Bill%202026%20-%20Send%20your%20objection%20to%20Parliament">
+href="https://wa.me/?text=I%20reject%20the%20Finance%20Bill%202026%20-%20Join%20the%20public%20participation%20campaign">
 📲 Share WhatsApp
 </a>
 
-<!-- X (TWITTER) -->
+<!-- X -->
 <a class="btn twitter"
 href="https://twitter.com/intent/tweet?text=I%20reject%20the%20Finance%20Bill%202026%20%23RejectFinanceBill2026">
 🐦 Share on X
@@ -133,7 +149,39 @@ href="https://twitter.com/intent/tweet?text=I%20reject%20the%20Finance%20Bill%20
 
 </div>
 
+<p class="note">
+⚠️ Tip: Use “Copy Full Petition” for complete submission or Email button for quick send.
+</p>
+
 </div>
+
+<script>
+function copyPetition() {
+const text = `
+RE: REJECTION OF THE FINANCE BILL 2026
+
+Dear Sir/Madam, RE: REJECTION OF THE FINANCE BILL 2026 
+I write as a concerned Kenyan citizen to formally reject the Finance Bill 2026 due to the negative economic impact many of its proposals may have on ordinary citizens, businesses, and the digital economy. 
+While I understand the government’s need to increase revenue collection, I believe several proposals in the Bill place excessive financial pressure on wananchi and businesses that are already struggling with the high cost of living. 
+I particularly oppose the following proposals: 
+1. The proposed 25% excise duty on mobile phones, which will make smartphones and communication devices more expensive and less affordable for many Kenyans. 
+2. Increased taxes on digital payments and foreign payment systems, including VAT and withholding taxes, which may increase the cost of online transactions, business payments, and fintech services.
+3. The proposal allowing KRA to issue agency notices even when tax disputes are under appeal, which may unfairly freeze business accounts and disrupt business operations before cases are concluded. 
+4. The proposal to tax undistributed company profits as dividends even where no dividends have actually been paid, which may discourage investment and business expansion. 
+5. The reduction of time available for filing tax returns, which may place unnecessary pressure on taxpayers and businesses. 
+6. Increased withholding tax on dividends paid to EAC citizens, which may negatively affect regional investment and economic cooperation. 
+7. The expanded VAT invoice requirements, which may create additional compliance burdens for small businesses and traders. 
+8. The tighter reporting rules on virtual asset platforms without sufficient safeguards on privacy and innovation.
+ Although some proposals such as VAT exemptions on solar batteries, electric buses, and medical products are beneficial, the overall burden created by the Finance Bill 2026 outweighs the benefits. 
+I therefore urge Parliament to reject the Finance Bill 2026 in its current form and instead develop policies that promote economic growth, protect small businesses, encourage investment, and reduce the cost of living for Kenyans. Thank you for considering my submission. 
+Yours faithfully,
+[Your Name]
+`;
+
+navigator.clipboard.writeText(text);
+alert("Full petition copied successfully. Paste into your email.");
+}
+</script>
 
 </body>
 </html>
